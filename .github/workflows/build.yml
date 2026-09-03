@@ -23,7 +23,7 @@ jobs:
             zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
 
       - name: Install Buildozer
-        run: pip install --upgrade buildozer cython
+        run: pip install --upgrade buildozer "cython==0.29.33"
 
       - name: Build APK
         run: buildozer -v android debug
